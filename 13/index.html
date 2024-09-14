@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop Puzzle</title>
+    <link rel="stylesheet" type="text/css" href="puzzle.css">
+</head>
+<body>
+    <img width="250px" height="350px" src="DSC_0081.jpg">
+    <div  class="drag" id="drag">
+        <div class="dragbox">
+            <div class="images" draggable="true" ondragstart="drag(event)" id="block1" style="--img:url(image_part_008.jpg);"></div>
+        </div>
+        <div class="dragbox">
+            <div class="images" draggable="true" ondragstart="drag(event)" id="block2" style="--img:url(image_part_004.jpg);"></div>
+        </div>
+        <div class="dragbox">
+            <div class="images" draggable="true" ondragstart="drag(event)" id="block3" style="--img:url(image_part_006.jpg);"></div>
+        </div>
+        <div class="dragbox">
+            <div class="images" draggable="true" ondragstart="drag(event)" id="block4" style="--img:url(image_part_002.jpg);"></div>
+        </div>
+        <div class="dragbox">
+            <div class="images" draggable="true" ondragstart="drag(event)" id="block5" style="--img:url(image_part_007.jpg);"></div>
+        </div>
+        <div class="dragbox">
+            <div class="images" draggable="true" ondragstart="drag(event)" id="block6" style="--img:url(image_part_003.jpg);"></div>
+        </div>
+        <div class="dragbox">
+            <div class="images" draggable="true" ondragstart="drag(event)" id="block7" style="--img:url(image_part_009.jpg);"></div>
+        </div>
+        <div class="dragbox">
+            <div class="images" draggable="true" ondragstart="drag(event)" id="block8" style="--img:url(image_part_005.jpg);"></div>
+        </div>
+        <div class="dragbox">
+            <div class="images" draggable="true" ondragstart="drag(event)" id="block9" style="--img:url(image_part_001.jpg);"></div>
+        </div>
+    </div>
+
+    <button class="Reset" onClick="window.location.reload();">Reset Puzzle</button>
+
+    <div class="board">
+        <div class="dropbox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="dropbox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="dropbox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="dropbox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="dropbox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="dropbox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="dropbox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="dropbox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="dropbox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+
+
+    <script src="puzzle.js"></script>
+</body>
+</html>
